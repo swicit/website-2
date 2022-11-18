@@ -4,12 +4,70 @@
     <meta charset="UTF-8" />
     <!-- TODO: Add favicon. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite ➕ Tailwind</title>
+    <title>Southwestern Illinois College (SWIC) IT Club</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
-    <h1 class="text-3xl text-center text-red-500 mt-3">Vite ➕ Tailwind</h1>
+  <body class="bg-slate-900 text-white">
+    <h1 class="sr-only">Southwestern Illinois College (SWIC) IT Club</h1>
+
+    <header class="bg-white py-2">
+      <img
+        src="./img/logo.jpg"
+        alt="Southwestern Illinois College (SWIC) IT Club logo"
+      />
+    </header>
+
+    <nav class="bg-blue-700">
+      <ul class="flex py-4 justify-around border-y-2 border-blue-900">
+        <li><a href="#info">Info ℹ️</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact 💬</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header class="bg-white text-black p-4 mb-4">
+        Connect with us and explore technology! We meet every Wednesday on
+        campus at 5PM in the IS/Business Building Room 2163.
+      </header>
+
+      <form>
+        <div><label for="">First Name</label><input type="text" /></div>
+        <div><label for="">Last Name</label><input type="text" /></div>
+        <div><label for="">Email</label><input type="email" /></div>
+        <div>
+          <label for="">Additional Information ℹ️</label
+          ><textarea
+            placeholder="Anything else you want to tell us? How did you hear about us?"
+          ></textarea>
+        </div>
+      </form>
+
+      <section id="info">
+        <h2 class="font-bold text-2xl">Info ℹ️</h2>
+        <p class="my-2 text-justify">
+          The mission of the SWIC IT Club is to implement an environment where
+          students and alumni with varying levels of technology skills can work
+          together to enhance their academic achievements and experience through
+          volunteer services, activities, and partnerships with local
+          businesses.
+        </p>
+        <p class="my-2 text-justify">
+          This is valuable no matter what profession you are pursuing. You do
+          not need to be going specifically for an IT degree to be a member of
+          SWIC IT Club.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2 class="font-bold text-2xl">Projects</h2>
+        <p>
+          We're open to your suggestions! Come by and help us create something
+          special.
+        </p>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
