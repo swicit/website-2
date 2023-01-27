@@ -2,29 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- TODO: Add favicon. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Southwestern Illinois College (SWIC) IT Club</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body class="bg-slate-900 text-white">
     <h1 class="sr-only">Southwestern Illinois College (SWIC) IT Club</h1>
 
-    <header class="bg-white py-2">
+    <header class="bg-white py-2 border-b">
       <img
         src="./img/logo.jpg"
         alt="Southwestern Illinois College (SWIC) IT Club logo"
       />
     </header>
-
-    <nav class="bg-blue-700">
-      <ul class="flex py-4 justify-around border-y-2 border-blue-900">
-        <li><a href="#info">Info ℹ️</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact 💬</a></li>
-      </ul>
-    </nav>
 
     <main>
       <header class="bg-white text-black p-4 mb-4">
@@ -32,20 +24,48 @@
         campus at 5PM in the IS/Business Building Room 2163.
       </header>
 
-      <form>
-        <div><label for="">First Name</label><input type="text" /></div>
-        <div><label for="">Last Name</label><input type="text" /></div>
-        <div><label for="">Email</label><input type="email" /></div>
+      <form class="flex flex-col gap-y-4 items-center border-b pb-6">
+        <h2 class="font-bold text-2xl">Join Us 🎉</h2>
         <div>
-          <label for="">Additional Information ℹ️</label
+          <label for="fname" class="sr-only">First Name</label
+          ><input
+            class="rounded"
+            type="text"
+            id="fname"
+            placeholder="First Name"
+          />
+        </div>
+
+        <div>
+          <label for="lname" class="sr-only">Last Name</label
+          ><input
+            class="rounded"
+            type="text"
+            id="lname"
+            placeholder="Last Name"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="sr-only">Email</label
+          ><input class="rounded" type="email" id="email" placeholder="Email" />
+        </div>
+
+        <div>
+          <label for="addl-info" class="sr-only"
+            >Additional Information ℹ️</label
           ><textarea
             placeholder="Anything else you want to tell us? How did you hear about us?"
+            id="addl-info"
+            class="h-36 rounded"
           ></textarea>
         </div>
+
+        <button class="bg-blue-500 text-white rounded px-4 py-2">Submit</button>
       </form>
 
-      <section id="info">
-        <h2 class="font-bold text-2xl">Info ℹ️</h2>
+      <section id="info" class="pb-2 px-6">
+        <h2 class="font-bold text-2xl my-4">Info ℹ️</h2>
         <p class="my-2 text-justify">
           The mission of the SWIC IT Club is to implement an environment where
           students and alumni with varying levels of technology skills can work
@@ -59,15 +79,13 @@
           SWIC IT Club.
         </p>
       </section>
-
-      <section id="projects">
-        <h2 class="font-bold text-2xl">Projects</h2>
-        <p>
-          We're open to your suggestions! Come by and help us create something
-          special.
-        </p>
-      </section>
     </main>
+
+    <footer class="border-t p-4">
+      <p class="text-center">
+        &copy; Southwestern Illinois College (SWIC) IT Club
+      </p>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
